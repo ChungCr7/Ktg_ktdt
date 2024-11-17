@@ -5,7 +5,7 @@ const connectDB = async () => {
   try {
     // Kết nối với MongoDB
     await mongoose.connect(
-      "mongodb+srv://baochung_101124:Pbc19402400@fluttercluster.vavrq.mongodb.net/?retryWrites=true&w=majority&appName=flutterCluster",
+      "mongodb+srv://baochung_101124:Pbc19402400@fluttercluster.vavrq.mongodb.net/flutter_db?retryWrites=true&w=majority&appName=flutterCluster",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
