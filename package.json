@@ -1,0 +1,26 @@
+{
+  "name": "ktg_ktdt",
+  "version": "1.0.0",
+  "description": "Node.js project to manage tours with MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "baochung_st22a": "file:",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.1",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.31.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
