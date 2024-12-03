@@ -9,6 +9,6 @@ router.post("/trips", tripController.addTrip);
 // Cập nhật trip theo ID
 router.put("/trips/:id", tripController.updateTrip);
 // Xóa trip theo ID
-router.delete("/trips/:id", tripController.deleteTrip); // Đây là đoạn cần thêm
+router.delete("/trips/:id", tripController.deleteTrip);
 
 module.exports = router;
