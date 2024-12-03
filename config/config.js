@@ -1,21 +1,17 @@
-
 const mongoose = require("mongoose");
 require("dotenv").config(); // Nạp biến môi trường
-const connectDB = async () => {
-  try {
-    // Kết nối với MongoDB
-    await mongoose.connect(
-      "mongodb+srv://baochung_101124:Pbc19402400@fluttercluster.vavrq.mongodb.net/flutter_db?retryWrites=true&w=majority&appName=flutterCluster",
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      }
-    );
-    console.log("Connect successfully!!!");
-  } catch (error) {
-    console.error("Connect failure!!!", error.message);
-    process.exit(1);
-  }
-};
+const mongoose = require("mongoose");
 
+const connectDB = async() => {
+    try {
+        // Ket noi voi mongodb
+        await mongoose.connect(
+            "mongodb+srv://baochung_101124:Pbc19402400@fluttercluster.vavrq.mongodb.net/flutter_db?retryWrites=true&w=majority&appName=flutterCluster"
+        );
+        console.log("Connect successfully!!!");
+    } catch (error) {
+        console.log("Connect failure!!!", error);
+        process.exit(1);
+    }
+};
 module.exports = connectDB;
