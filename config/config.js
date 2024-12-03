@@ -1,6 +1,6 @@
 
 const mongoose = require("mongoose");
-
+require("dotenv").config(); // Nạp biến môi trường
 const connectDB = async () => {
   try {
     // Kết nối với MongoDB
